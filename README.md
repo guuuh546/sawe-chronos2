@@ -100,7 +100,7 @@ Run any script with `--help` for the full argument list.
 - `multiseed_<dataset>/summary.json` — three-seed summary for each dataset.
 - `multiseed_<dataset>/raw_*.json` — per-seed raw results.
 - `P0_results.md` / `P0_results.json` — static-weight baseline, threshold sensitivity, and band shares.
-- `r1_01_results.md` — consolidated result tables used in the revision.
+
 
 ## Notes
 
