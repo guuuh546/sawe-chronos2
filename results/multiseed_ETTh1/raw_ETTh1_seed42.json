@@ -1,0 +1,115 @@
+{
+  "dataset": "ETTh1",
+  "seed": 42,
+  "input_dim": 7,
+  "band": {
+    "edges": [
+      0,
+      4,
+      9,
+      13
+    ],
+    "error_energy_share": [
+      0.672808,
+      0.244913,
+      0.082279
+    ],
+    "methods": {
+      "vanilla_lora": {
+        "overall": 0.564513,
+        "per_band": [
+          0.499907,
+          0.047783,
+          0.016823
+        ]
+      },
+      "fourier_ft": {
+        "overall": 0.5317,
+        "per_band": [
+          0.466515,
+          0.04857,
+          0.016616
+        ]
+      },
+      "freq_lora": {
+        "overall": 0.519256,
+        "per_band": [
+          0.453413,
+          0.049179,
+          0.016664
+        ]
+      },
+      "static_ensemble": {
+        "overall": 0.501673,
+        "per_band": [
+          0.437829,
+          0.047374,
+          0.01647
+        ]
+      }
+    }
+  },
+  "diag": {
+    "per_member_fixed_mse": {
+      "vanilla_lora": 0.564513,
+      "fourier_ft": 0.5317,
+      "freq_lora": 0.519256
+    },
+    "best_fixed_member": "freq_lora",
+    "best_fixed_mse": 0.519256,
+    "oracle_mse": 0.452014,
+    "oracle_gain_pct": 12.95,
+    "best_member_share": [
+      0.3169,
+      0.3043,
+      0.3787
+    ],
+    "majority_member": "freq_lora",
+    "majority_acc": 0.3787,
+    "majority_mse": 0.519256,
+    "lag_acc": 0.476,
+    "lag_mse": 0.507019,
+    "lag_gain_pct": 2.357,
+    "time_permuted_mse": 0.536819,
+    "time_permuted_gain_pct": -3.382,
+    "best_fixed_idx": 2
+  },
+  "extra": {
+    "early_exit": {
+      "sawe_mse": 0.50107,
+      "num_samples": 3414,
+      "max_weight_mean": 0.3411,
+      "max_weight_p50": 0.3393,
+      "max_weight_p90": 0.3412,
+      "max_weight_max": 0.4817,
+      "weight_mean_per_member": [
+        0.3328,
+        0.3289,
+        0.3383
+      ],
+      "exit_rate": {
+        "0.35": 0.0246,
+        "0.4": 0.0179,
+        "0.45": 0.0056,
+        "0.5": 0.0,
+        "0.6": 0.0,
+        "0.7": 0.0,
+        "0.8": 0.0,
+        "0.9": 0.0
+      }
+    },
+    "calib": {
+      "best_fixed_test_mse": 0.519256,
+      "scalar_c": 1.1943,
+      "scalar_val_mse": 0.332751,
+      "scalar_test_mse": 0.488594,
+      "linear_alpha": [
+        0.548,
+        0.174,
+        0.455
+      ],
+      "linear_val_mse": 0.329719,
+      "linear_test_mse": 0.489495
+    }
+  }
+}
