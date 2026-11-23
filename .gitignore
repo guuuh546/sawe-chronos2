@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+outputs/
+loratime/
+data/*
+!data/README.md
+*.pt
+*.npz
+.DS_Store
