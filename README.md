@@ -9,7 +9,7 @@ Yu Huang, Qi Chen, Qiang Huang
 ## Repository layout
 
 - `code/` — implementation of the three fine-tuning methods, the spectrum-informed weighted ensemble (SAWE), member selection, band-wise evaluation, and calibration checks.
-- `results/` — per-seed raw results and three-seed summaries used in the revision; `P0_results.md/json` contains the static-weight baseline, threshold sensitivity, and band-share results; `r1_01_results.md` contains the consolidated result tables.
+- `results/` — per-seed raw results and three-seed summaries used in the revision; `P0_results.json` contains the static-weight baseline, threshold sensitivity, and band-share results; `r1_01_results.md` indexes the consolidated per-seed files.
 - `data/` — expected location for the public benchmark datasets (not included; see `data/README.md`).
 - `requirements.txt` — Python dependencies.
 
@@ -99,8 +99,8 @@ Run any script with `--help` for the full argument list.
 
 - `multiseed_<dataset>/summary.json` — three-seed summary for each dataset.
 - `multiseed_<dataset>/raw_*.json` — per-seed raw results.
-- `P0_results.md` / `P0_results.json` — static-weight baseline, threshold sensitivity, and band shares.
-
+- `P0_results.json` — static-weight baseline, threshold sensitivity, and band shares; `P0_results.md` is a short note on its scope.
+- `r1_01_results.md` — index of the per-seed result files.
 
 ## Notes
 
